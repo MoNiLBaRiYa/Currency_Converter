@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background: #FFFFFF;
+    color: #1A1A1A;
+    min-height: 100vh;
+}
+
+.glass-card {
+    background: #F2F4F7;
+    border-radius: 16px;
+    padding: 48px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -0.5px;
+}
+
+.form-label {
+    color: #1A1A1A;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.glass-input,
+.glass-select {
+    background: #FFFFFF;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 16px;
+    color: #1A1A1A;
+    transition: all 0.2s ease;
+}
+
+.glass-input:focus,
+.glass-select:focus {
+    background: #FFFFFF;
+    border-color: #000000;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.glass-input {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.selectcontainer {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 8px 12px;
+    gap: 12px;
+}
+
+.flag-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.glass-select {
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.glass-select:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.swap-btn {
+    background: #000000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 18px;
+}
+
+.swap-btn:hover {
+    background: #6C5CE7;
+    transform: rotate(180deg);
+}
+
+.msg {
+    background: #FFFFFF;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #1A1A1A;
+    font-size: 18px;
+}
+
+.convert-btn {
+    background: #000000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+}
+
+.convert-btn:hover {
+    background: #6C5CE7;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(108, 92, 231, 0.3);
+}
+
+.last-updated {
+    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 32px 24px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    .swap-btn {
+        transform: rotate(90deg);
+    }
+    
+    .swap-btn:hover {
+        transform: rotate(270deg);
+    }
+}
